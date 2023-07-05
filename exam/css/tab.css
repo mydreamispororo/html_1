@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+@media screen and (max-width:1000px) {
+    .flex-wrap {
+
+        max-width: 100%;
+    }
+
+    .item {
+        flex-basis: 49.6%; /*이미지 간 여백*/
+    }
+
+
+    .content h3 {
+        margin-top: 5px;
+        margin-bottom: 2px;
+        font-size: 24PX;
+        text-align: center;
+    }
+
+    .content p {
+        line-height: 20px;
+        text-align: center;
+    
+    }
+    
+}

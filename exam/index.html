@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Template Exercise</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Lato&family=Libre+Franklin&family=Pacifico&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        ul li {
+            list-style: none;
+        }
+        /*--------------------------------------------------------*/
+
+        body {
+            font-family: 'Libre Franklin', sans-serif;
+        }
+
+        nav {
+            width: 100%;
+            height: 90px;
+            border-top: 1px solid #f7f7f7;
+        }
+
+        .hero {
+            background-image: url(./images/vase.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 847px;
+        }
+        
+        .nav-wrap {
+            width: 1200px;
+            margin:0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 90px;
+        }
+
+
+        .logo {
+            font-family: 'Pacifico', cursive;
+            font-size: 35px;
+            font-weight: bold;
+            
+        }
+
+        .menu ul {
+            display: flex;
+        }
+
+        .menu ul li a {
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            font-family: 'Lato', sans-serif;
+            margin-right: 30px;
+            color: #999;    
+        }
+
+        .menu ul li a.active {
+            color: #f00;
+        }
+
+        .hero-wrap {
+            width: 1200px;
+            margin:0 auto;
+            display: flex;
+
+            /*높이 값이 항상 존재를 해야 세로 정렬이 가능*/
+            align-items: center;
+            height: 800px
+        }
+
+
+        .hero-text {
+            /* background-color: #fff; */
+            width: 500px;
+        }
+
+        .hero-text h6 {
+            color: #999;
+            letter-spacing: 3px;
+        }
+
+
+        .hero-text h1 {
+            margin: 20px 0;
+            font-size: 50px;
+
+        }
+
+        .hero-text p {
+            color: rgba(0, 0, 0, 0.6);
+        }
+
+
+        .hero-btn {
+            text-transform: uppercase;
+            font-size: 12px;
+            background-color: #ac1313;
+            padding: 15px 30px;
+            color: #fff;
+            cursor: pointer;
+            border: 0;
+            margin-top: 40px;
+        }
+
+        .hero-btn:hover {
+            background-color: #000;
+            transition: 0.3s;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <nav>
+                <div class="nav-wrap">
+                    <div class="logo">Pompeo</div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="" class="active">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Shop</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Cart</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="hero">
+                <div class="hero-wrap">
+                    <div class="hero-text">
+                        <h6>POMPEO POTTERY</h6>
+                        <h1>Unique Porcelain & Stone Collection</h1>
+                        <p>Unique & modern pottery made by our master in porcelain & stones</p>
+                        <div class="btn-wrap">
+                            <button class="hero-btn">
+                                SHOP COLLECTION
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="one">본문1</section>
+            <section class="two">본문2</section>
+            <section class="three">본문3</section> 
+            <section class="four">본문4</section>
+            <section class="five">본문5</section>
+        </main>
+        <footer>카피라이터</footer>
+    </div>
+</body>
+</html>

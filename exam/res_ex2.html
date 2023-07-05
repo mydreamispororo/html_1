@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 이미지 예제</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section h1 {
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 20px;
+            font-size: 2.5rem;
+            font-family: 'Poppins', sans-serif;
+            text-transform: uppercase;
+            
+        }
+
+        /* 이미지 크기를 조정할 때는 img를 조정하는게 아니라 img 태그의 부모에게 크기를 줘야됨
+        img는 width: 100% 로 처리 */
+        .flex-wrap {
+            max-width: 1600px;
+            margin: 0 auto;
+
+            display: flex;
+            background-color: rgb(255, 104, 247);
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+        }
+
+        .item {
+            width: 24%;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .content {
+            font-family: 'Poppins', sans-serif;
+            margin-top: 10px;
+        }
+
+        .content h3 {
+            text-align: center;
+        }
+
+        .content p {
+            text-align: center;
+        }
+   
+        @media screen and (max-width:800px) {
+            section h1 {
+                padding: 60px 0;
+                font-size: 2.8125rem;
+            
+            }
+
+            .flex-wrap {
+                max-width: 100%;
+
+            }
+
+            .item {
+                width: 10%;
+            }
+            
+        }
+
+        @media screen and (max-width:600px) {
+            section h1 {
+                padding: 20px 0;
+                font-size: 1.875rem;
+            
+            }
+
+            .flex-wrap {
+                max-width: 100%;
+            }
+
+            .item {
+                width: 100%;
+            }
+
+            .content {
+                margin-bottom: 50px;
+                padding: 0 20px;
+            }
+            
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Shop Mall Item Lists</h1>
+        <div class="flex-wrap">
+            <div class="item">
+                <img src="../exam/images/h01.jpg" alt="img1">
+                <div class="content">
+                    <h3>Sale Pumkin $33.33</h3>
+                    <p>오늘 점심은?</p>
+                </div>
+            </div>
+            <div class="item">  
+                <img src="../exam/images/h02.jpg" alt="img2">
+                <div class="content">
+                    <h3>Sale Pumkin $33.33</h3>
+                    <p>뭐먹징</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="../exam/images/h03.jpg" alt="img3">
+                <div class="content">
+                    <h3>Sale Pumkin $33.33</h3>
+                    <p>배고파!!!</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="../exam/images/h04.jpg" alt="img4">
+                <div class="content">
+                    <h3>Sale Pumkin $33.33</h3>
+                    <p>호롤로로로</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
